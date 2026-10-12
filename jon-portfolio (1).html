@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jon Abbas | WordPress Developer</title>
+<style>
+:root{--bg:#0b1020;--card:#141b34;--text:#e8ecf8;--muted:#9aa5c7;--accent:#4f8cff;--accent2:#8b5cf6;--line:#242d52;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f5f7fd;--card:#fff;--text:#14193a;--muted:#5a6488;--line:#dfe4f5}}
+:root[data-theme="light"]{--bg:#f5f7fd;--card:#fff;--text:#14193a;--muted:#5a6488;--line:#dfe4f5}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;justify-content:space-between;align-items:center;padding:14px 5%;background:var(--bg);border-bottom:1px solid var(--line)}
+nav b{font-size:1.3rem}nav b span,.grad{color:var(--accent)}
+nav ul{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+nav a{color:var(--muted);font-size:.95rem}nav a:hover{color:var(--accent)}
+section{padding:70px 5%;max-width:1100px;margin:auto}
+h2{font-size:2rem;margin-bottom:28px}
+.tag{color:var(--accent);letter-spacing:2px;font-size:.8rem;font-weight:600;margin-bottom:6px}
+.hero{display:flex;gap:40px;align-items:center;flex-wrap:wrap;min-height:75vh}
+.hero>div{flex:1 1 300px}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:8px 0 14px}
+.btn{display:inline-block;padding:11px 24px;border-radius:30px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:600;margin:14px 10px 0 0;border:0;cursor:pointer;font-size:1rem}
+.btn.o{background:none;border:1px solid var(--accent);color:var(--accent)}
+.photo{position:relative;width:260px;height:260px;border-radius:50%;margin:auto;background:var(--card);border:3px solid var(--accent);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:.85rem;cursor:pointer}
+.photo img{width:100%;height:100%;object-fit:cover}
+.up{display:block;margin-top:10px;text-align:center;color:var(--accent);font-size:.85rem;cursor:pointer}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+@media(max-width:720px){.about{grid-template-columns:1fr}nav ul{gap:12px}}
+.intern{border-left:4px solid var(--accent);margin-bottom:18px}
+.chips span{display:inline-block;margin:4px 6px 0 0;padding:4px 12px;border-radius:20px;border:1px solid var(--line);color:var(--muted);font-size:.85rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.grid .card{text-align:center;transition:.2s}.grid .card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.grid .i{font-size:2rem}
+.grid h3{font-size:1.05rem;margin:6px 0 2px}.grid p,.muted{color:var(--muted);font-size:.9rem}
+.proj{padding:0;overflow:hidden}
+.proj .img{height:190px;background:#0003;display:flex;align-items:center;justify-content:center;color:var(--muted);cursor:pointer;position:relative}
+.proj .img img{width:100%;height:100%;object-fit:cover}
+.proj .b{padding:20px}
+.proj small{color:var(--accent);font-weight:600}
+.proj h3{margin:4px 0 8px}
+.contact a.card{display:block;margin-bottom:12px}
+.contact a.card:hover{border-color:var(--accent)}
+.contact b{display:block}
+footer{text-align:center;padding:30px;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+input[type=file]{display:none}
+</style>
+</head>
+<body>
+<nav><b>Jon<span>.</span></b>
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+
+<section id="home" class="hero">
+<div>
+<p class="tag">WELCOME TO MY PORTFOLIO</p>
+<h1>Hi, I'm <span class="grad">Jon Abbas</span></h1>
+<p class="muted" style="font-size:1.1rem">A WordPress Developer building fast, responsive websites with Elementor and WooCommerce, and currently looking for a WordPress internship.</p>
+<a class="btn" href="#projects">View My Projects</a><a class="btn o" href="#contact">Contact Me</a>
+</div>
+<div>
+<label class="photo" for="profileUp" id="profileBox"><span>📷<br>Click to upload<br>your photo</span></label>
+<input type="file" id="profileUp" accept="image/*">
+</div>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="about">
+<div>
+<div class="card intern">
+<p class="tag">LOOKING FOR AN INTERNSHIP</p>
+<p>I'm a WordPress developer seeking a <b>WordPress internship</b> where I can gain real-world experience, work with a professional team, and grow my skills while contributing to live client projects. I'm eager to learn, take feedback well, and deliver clean, reliable work.</p>
+</div>
+<p class="muted">Hello! I'm <b style="color:var(--text)">Jon Abbas</b>, a WordPress developer who enjoys turning designs into functional, fast and mobile-friendly websites. I build business sites and online stores using Elementor and WooCommerce, convert PSD designs into WordPress themes, and optimize page speed.</p>
+<div class="chips" style="margin-top:14px"><span>Elementor</span><span>WooCommerce</span><span>Responsive Design</span><span>Speed Optimization</span><span>PSD to WordPress</span></div>
+</div>
+<div>
+<label class="card" for="aboutUp" style="display:block;cursor:pointer;padding:0;overflow:hidden;min-height:260px" id="aboutBox"><div style="padding:100px 20px;text-align:center" class="muted">🖼️ Click to upload an About image</div></label>
+<input type="file" id="aboutUp" accept="image/*">
+</div>
+</div>
+</section>
+
+<section id="skills">
+<p class="tag">WHAT I WORK WITH</p><h2>My Skills</h2>
+<div class="grid">
+<div class="card"><div class="i">🧩</div><h3>Elementor</h3><p>Page Building & Design</p></div>
+<div class="card"><div class="i">🛒</div><h3>WooCommerce</h3><p>Online Store Development</p></div>
+<div class="card"><div class="i">📱</div><h3>Responsive Design</h3><p>Mobile-Friendly Layouts</p></div>
+<div class="card"><div class="i">⚡</div><h3>Speed Optimization</h3><p>Faster Load Times</p></div>
+<div class="card"><div class="i">🎨</div><h3>PSD to WordPress</h3><p>Pixel-Perfect Conversion</p></div>
+<div class="card"><div class="i">✍️</div><h3>Blog Websites</h3><p>Clean, SEO-Friendly Blogs</p></div>
+<div class="card"><div class="i">💼</div><h3>Portfolio & Business Websites</h3><p>Professional Company Sites</p></div>
+</div>
+</section>
+
+<section id="projects">
+<p class="tag">MY RECENT WORK</p><h2>Featured Projects</h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+<div class="card proj" style="text-align:left">
+<label class="img" for="p1"><span>🖼️ Click to upload image</span></label><input type="file" id="p1" accept="image/*">
+<div class="b"><small>WordPress • Elementor</small><h3>Dark Blue Jackel</h3><p class="muted">A WordPress website built with a clean, responsive design.</p><div class="chips"><span>WordPress</span><span>Elementor</span><span>Responsive</span></div></div>
+</div>
+<div class="card proj" style="text-align:left">
+<label class="img" for="p2"><span>🖼️ Click to upload image</span></label><input type="file" id="p2" accept="image/*">
+<div class="b"><small>WordPress • WooCommerce</small><h3>Pond Perfecter</h3><p class="muted">A WordPress website with a polished layout and smooth user experience.</p><div class="chips"><span>WordPress</span><span>WooCommerce</span><span>Speed</span></div></div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Get in Touch</h2>
+<p class="muted" style="margin:-14px 0 20px">Let's build something amazing together.</p>
+<a class="card" href="mailto:sbsewag@gmail.com">✉ <b>Email</b><span class="muted">sbsewag@gmail.com</span></a>
+<a class="card" href="tel:03435833195">☎ <b>Phone</b><span class="muted">03435833195</span></a>
+<a class="card" href="https://www.linkedin.com/in/jon-abbas-aa824a3a0/" target="_blank" rel="noopener">↗ <b>LinkedIn</b><span class="muted">linkedin.com/in/jon-abbas-aa824a3a0</span></a>
+</section>
+
+<footer>© 2026 Jon Abbas. All Rights Reserved.</footer>
+
+<script>
+// Image upload: previews the chosen image and remembers it in this browser (if storage is available)
+function wire(inputId, boxId, key, mode){
+  var input=document.getElementById(inputId), box=document.getElementById(boxId)||input.previousElementSibling;
+  function show(src){var t=box.querySelector('.img')||box; box.innerHTML='<img alt="" src="'+src+'">'; if(mode==='proj'){box.className='img'}}
+  try{var saved=localStorage.getItem(key); if(saved) show(saved);}catch(e){}
+  input.addEventListener('change',function(){
+    var f=input.files[0]; if(!f) return;
+    var r=new FileReader();
+    r.onload=function(){show(r.result); try{localStorage.setItem(key,r.result)}catch(e){}};
+    r.readAsDataURL(f);
+  });
+}
+wire('profileUp','profileBox','jon_profile');
+wire('aboutUp','aboutBox','jon_about');
+wire('p1',null,'jon_p1','proj');
+wire('p2',null,'jon_p2','proj');
+</script>
+</body>
+</html>
